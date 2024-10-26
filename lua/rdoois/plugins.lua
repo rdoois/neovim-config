@@ -45,4 +45,6 @@ return packer.startup(function(use)
     use {"theprimeagen/harpoon", branch = "harpoon2"}
     use "mbbill/undotree"
     use "tpope/vim-fugitive"
+    use "nvim-tree/nvim-web-devicons"
+    use "nvim-tree/nvim-tree.lua"
 end)
