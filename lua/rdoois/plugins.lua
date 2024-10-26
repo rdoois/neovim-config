@@ -43,4 +43,5 @@ return packer.startup(function(use)
     use {"nvim-telescope/telescope.nvim", tag = "0.1.8"}
     use ("nvim-treesitter/nvim-treesitter", {run = ":TSUpdate"})
     use {"theprimeagen/harpoon", branch = "harpoon2"}
+    use "mbbill/undotree"
 end)
