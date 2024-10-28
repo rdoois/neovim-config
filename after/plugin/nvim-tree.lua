@@ -1,4 +1,6 @@
+local keymap = vim.keymap.set
 local nvim_tree_ok, nvim_tree = pcall(require, "nvim-tree")
+
 if not nvim_tree_ok then
     return
 end
@@ -10,7 +12,6 @@ local function custom_on_attach(bufnr)
     end
 
     local opts = { buffer = bufnr, noremap = true, silent = true, nowait = true }
-    local keymap = vim.keymap.set
 
     api.config.mappings.default_on_attach(bufnr)
 
@@ -68,3 +69,6 @@ nvim_tree.setup({
     },
     on_attach = custom_on_attach,
 })
+
+keymap("n", "<leader>pv", ":NvimTreeToggle<CR>", opts) 
+

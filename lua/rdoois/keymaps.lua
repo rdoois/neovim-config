@@ -6,4 +6,4 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- keymap("n", "<leader>pv", ":Ex<CR>", opts)
-keymap("n", "<leader>pv", ":NvimTreeToggle<CR>", opts) 
+
